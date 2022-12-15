@@ -36,12 +36,11 @@
   <button id="btnClose" onclick="closed()">Close</button>
 
   <!-- <script src="js/vconsole.min.js"></script> -->
-  <!-- <script>
-    var vConsole = new VConsole()
-    console.log("Hello World!")
+  <!-- <script> var vConsole = new VConsole()
+      console.log("Hello World!")
   </script> -->
 
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function createUniversalLink() {
     }
@@ -79,12 +78,13 @@
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.getisInClient())
+
       if(liff.isInClient()) {
-        document.getElementByID("btnLogOut").style.display = "none"
+        document.getElementById("btnLogOut").style.display="none"
       } else {
-        document.getElementByID("btnMsg").style.display = "none"
-        document.getElementByID("btnScanCode").style.display = "none"
-        document.getElementByID("btnClose").style.display = "none"
+        document.getElementById("btnMsg").style.display="none"
+        document.getElementById("btnScanCode").style.display="none"
+        document.getElementById("btnClose").style.display="none"
       }
     }
 
