@@ -11,7 +11,7 @@ function main(){
             liff.login();
         }        
         liff.getProfile().then((profile) => {            
-            userId = profile.userId;
+            //userId = profile.userId;
             console.log(profile);
         });
     });    
