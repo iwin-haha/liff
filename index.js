@@ -17,6 +17,14 @@ function main(){
     });    
 }
 
+const config = {
+    // etc...
+    kit: {
+      // etc...
+      floc: process.env.NODE_ENV === "development",
+    },
+  };
+  
 main()
 
 async function send(e){     
